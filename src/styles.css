@@ -171,6 +171,24 @@
   }
 }
 
+@utility card-tech {
+  background: linear-gradient(
+    160deg,
+    color-mix(in oklab, var(--surface) 92%, transparent),
+    color-mix(in oklab, var(--background) 90%, transparent)
+  );
+  border: 1px solid var(--border);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+  &:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in oklab, var(--tech) 55%, transparent);
+    box-shadow: var(--shadow-tech);
+  }
+}
+
 @utility glow-pulse {
   animation: glowPulse 2.6s ease-in-out infinite;
 }

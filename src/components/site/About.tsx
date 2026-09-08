@@ -1,8 +1,9 @@
-import { Layers, Boxes, MapPin } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { Layers, Boxes, MapPin, Users, type LucideIcon } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/hooks/use-reveal";
 
-const icons = [Boxes, Layers, MapPin];
+const icons: LucideIcon[] = [Boxes, Layers, MapPin];
 
 export function About() {
   const { t } = useLang();
@@ -25,7 +26,7 @@ export function About() {
               <Reveal key={c.title} delay={i * 120}>
                 <div className="card-surface h-full rounded-2xl p-7">
                   <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-secondary/60 text-gold">
-                    <Icon className="h-5 w-5" />
+                    {Icon && <Icon className="h-5 w-5" />}
                   </div>
                   <h3 className="mt-5 text-lg font-semibold text-cream">{c.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.text}</p>
@@ -34,6 +35,18 @@ export function About() {
             );
           })}
         </div>
+
+        <Reveal>
+          <div className="mt-12">
+            <Link
+              to="/who"
+              className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-6 py-2.5 text-sm font-semibold text-gold transition-all hover:bg-gold/20"
+            >
+              <Users className="h-4 w-4" />
+              {t.about.ourTeam}
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

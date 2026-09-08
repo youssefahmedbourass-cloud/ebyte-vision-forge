@@ -1,14 +1,16 @@
 import { useState, type FormEvent } from "react";
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/hooks/use-reveal";
 
 export const CONTACT = {
-  email: "contact@ebyte-software.ma",
-  phone: "+212 6 00 00 00 00",
-  linkedin: "https://linkedin.com",
-  github: "https://github.com",
+  email: "eByteSofware@proton.me",
+  phone: "+212 684-651514",
+  techSupport: "+212 664-845803",
+  linkedin: "https://www.linkedin.com/company/ebyte-software/posts/?viewAsMember=true",
+  instagram: "https://www.instagram.com/ebytesofwar?stkn=aXNteTQwNzFoMzBv",
+  facebook: "https://web.facebook.com/people/EByte-Software/61592461932058/",
 };
 
 export function Contact() {
@@ -37,48 +39,6 @@ export function Contact() {
         </Reveal>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[1.3fr_1fr]">
-          <Reveal>
-            <form onSubmit={onSubmit} className="card-surface rounded-2xl p-7 hover:translate-y-0">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <input
-                  required
-                  className={field}
-                  placeholder={t.contact.name}
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                />
-                <input
-                  required
-                  type="email"
-                  className={field}
-                  placeholder={t.contact.email}
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                />
-              </div>
-              <input
-                className={`${field} mt-4`}
-                placeholder={t.contact.phone}
-                value={form.phone}
-                onChange={(e) => setForm({ ...form, phone: e.target.value })}
-              />
-              <textarea
-                required
-                rows={5}
-                className={`${field} mt-4 resize-none`}
-                placeholder={t.contact.message}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-              />
-              <button
-                type="submit"
-                className="mt-6 w-full rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] sm:w-auto sm:px-10"
-              >
-                {t.contact.submit}
-              </button>
-            </form>
-          </Reveal>
-
           <Reveal delay={120}>
             <div className="card-surface h-full rounded-2xl p-7 hover:translate-y-0">
               <h3 className="text-lg font-semibold text-cream">{t.contact.infoTitle}</h3>
@@ -91,8 +51,21 @@ export function Contact() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-gold" />
-                  <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="hover:text-foreground">
+                  <a
+                    href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
+                    className="hover:text-foreground"
+                  >
                     {CONTACT.phone}
+                  </a>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone className="h-4 w-4 text-tech" />
+                  <span className="text-xs text-muted-foreground">{t.contact.techSupport}:</span>
+                  <a
+                    href={`tel:${CONTACT.techSupport.replace(/\s/g, "")}`}
+                    className="hover:text-foreground"
+                  >
+                    {CONTACT.techSupport}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -111,13 +84,22 @@ export function Contact() {
                   <Linkedin className="h-4 w-4" />
                 </a>
                 <a
-                  href={CONTACT.github}
+                  href={CONTACT.instagram}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="GitHub"
+                  aria-label="Instagram"
                   className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border text-muted-foreground transition-colors hover:border-gold hover:text-gold"
                 >
-                  <Github className="h-4 w-4" />
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a
+                  href={CONTACT.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border text-muted-foreground transition-colors hover:border-gold hover:text-gold"
+                >
+                  <Facebook className="h-4 w-4" />
                 </a>
               </div>
             </div>

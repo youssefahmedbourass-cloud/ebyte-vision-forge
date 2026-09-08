@@ -10,33 +10,141 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CgsRouteImport } from './routes/cgs'
+import { Route as ErentRouteImport } from './routes/erent'
+import { Route as PosEbyteRouteImport } from './routes/pos-ebyte'
+import { Route as SmartMenuNfcRouteImport } from './routes/smart-menu-nfc'
+import { Route as WhoRouteImport } from './routes/who'
+import { Route as ServicesDesktopRouteImport } from './routes/services/desktop'
+import { Route as ServicesMobileRouteImport } from './routes/services/mobile'
+import { Route as ServicesWebRouteImport } from './routes/services/web'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CgsRoute = CgsRouteImport.update({
+  id: '/cgs',
+  path: '/cgs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ErentRoute = ErentRouteImport.update({
+  id: '/erent',
+  path: '/erent',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PosEbyteRoute = PosEbyteRouteImport.update({
+  id: '/pos-ebyte',
+  path: '/pos-ebyte',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SmartMenuNfcRoute = SmartMenuNfcRouteImport.update({
+  id: '/smart-menu-nfc',
+  path: '/smart-menu-nfc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhoRoute = WhoRouteImport.update({
+  id: '/who',
+  path: '/who',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesDesktopRoute = ServicesDesktopRouteImport.update({
+  id: '/services/desktop',
+  path: '/services/desktop',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesMobileRoute = ServicesMobileRouteImport.update({
+  id: '/services/mobile',
+  path: '/services/mobile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesWebRoute = ServicesWebRouteImport.update({
+  id: '/services/web',
+  path: '/services/web',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cgs': typeof CgsRoute
+  '/erent': typeof ErentRoute
+  '/pos-ebyte': typeof PosEbyteRoute
+  '/smart-menu-nfc': typeof SmartMenuNfcRoute
+  '/who': typeof WhoRoute
+  '/services/desktop': typeof ServicesDesktopRoute
+  '/services/mobile': typeof ServicesMobileRoute
+  '/services/web': typeof ServicesWebRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cgs': typeof CgsRoute
+  '/erent': typeof ErentRoute
+  '/pos-ebyte': typeof PosEbyteRoute
+  '/smart-menu-nfc': typeof SmartMenuNfcRoute
+  '/who': typeof WhoRoute
+  '/services/desktop': typeof ServicesDesktopRoute
+  '/services/mobile': typeof ServicesMobileRoute
+  '/services/web': typeof ServicesWebRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cgs': typeof CgsRoute
+  '/erent': typeof ErentRoute
+  '/pos-ebyte': typeof PosEbyteRoute
+  '/smart-menu-nfc': typeof SmartMenuNfcRoute
+  '/who': typeof WhoRoute
+  '/services/desktop': typeof ServicesDesktopRoute
+  '/services/mobile': typeof ServicesMobileRoute
+  '/services/web': typeof ServicesWebRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/cgs'
+    | '/erent'
+    | '/pos-ebyte'
+    | '/smart-menu-nfc'
+    | '/who'
+    | '/services/desktop'
+    | '/services/mobile'
+    | '/services/web'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/cgs'
+    | '/erent'
+    | '/pos-ebyte'
+    | '/smart-menu-nfc'
+    | '/who'
+    | '/services/desktop'
+    | '/services/mobile'
+    | '/services/web'
+  id:
+    | '__root__'
+    | '/'
+    | '/cgs'
+    | '/erent'
+    | '/pos-ebyte'
+    | '/smart-menu-nfc'
+    | '/who'
+    | '/services/desktop'
+    | '/services/mobile'
+    | '/services/web'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CgsRoute: typeof CgsRoute
+  ErentRoute: typeof ErentRoute
+  PosEbyteRoute: typeof PosEbyteRoute
+  SmartMenuNfcRoute: typeof SmartMenuNfcRoute
+  WhoRoute: typeof WhoRoute
+  ServicesDesktopRoute: typeof ServicesDesktopRoute
+  ServicesMobileRoute: typeof ServicesMobileRoute
+  ServicesWebRoute: typeof ServicesWebRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +156,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cgs': {
+      id: '/cgs'
+      path: '/cgs'
+      fullPath: '/cgs'
+      preLoaderRoute: typeof CgsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/erent': {
+      id: '/erent'
+      path: '/erent'
+      fullPath: '/erent'
+      preLoaderRoute: typeof ErentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pos-ebyte': {
+      id: '/pos-ebyte'
+      path: '/pos-ebyte'
+      fullPath: '/pos-ebyte'
+      preLoaderRoute: typeof PosEbyteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/smart-menu-nfc': {
+      id: '/smart-menu-nfc'
+      path: '/smart-menu-nfc'
+      fullPath: '/smart-menu-nfc'
+      preLoaderRoute: typeof SmartMenuNfcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/who': {
+      id: '/who'
+      path: '/who'
+      fullPath: '/who'
+      preLoaderRoute: typeof WhoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/desktop': {
+      id: '/services/desktop'
+      path: '/services/desktop'
+      fullPath: '/services/desktop'
+      preLoaderRoute: typeof ServicesDesktopRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/mobile': {
+      id: '/services/mobile'
+      path: '/services/mobile'
+      fullPath: '/services/mobile'
+      preLoaderRoute: typeof ServicesMobileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/web': {
+      id: '/services/web'
+      path: '/services/web'
+      fullPath: '/services/web'
+      preLoaderRoute: typeof ServicesWebRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CgsRoute: CgsRoute,
+  ErentRoute: ErentRoute,
+  PosEbyteRoute: PosEbyteRoute,
+  SmartMenuNfcRoute: SmartMenuNfcRoute,
+  WhoRoute: WhoRoute,
+  ServicesDesktopRoute: ServicesDesktopRoute,
+  ServicesMobileRoute: ServicesMobileRoute,
+  ServicesWebRoute: ServicesWebRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -1,8 +1,10 @@
-import { Smartphone, Globe, Monitor, ArrowRight } from "lucide-react";
+import { Smartphone, Globe, Monitor, ArrowRight, type LucideIcon } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/hooks/use-reveal";
 
-const icons = [Smartphone, Globe, Monitor];
+const icons: LucideIcon[] = [Smartphone, Globe, Monitor];
+const serviceLinks = ["/services/mobile", "/services/web", "/services/desktop"] as const;
 
 export function Services() {
   const { t, rtl } = useLang();
@@ -17,14 +19,15 @@ export function Services() {
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {t.services.items.map((s, i) => {
             const Icon = icons[i];
+            const href = serviceLinks[i];
             return (
               <Reveal key={s.title} delay={i * 120}>
-                <a href="#products" className="card-surface group block h-full rounded-2xl p-7">
+                <Link to={href} className="card-surface group block h-full rounded-2xl p-7">
                   <div
                     className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-primary-foreground"
                     style={{ background: "var(--gradient-tech)" }}
                   >
-                    <Icon className="h-5 w-5" />
+                    {Icon && <Icon className="h-5 w-5" />}
                   </div>
                   <h3 className="mt-5 text-lg font-semibold text-cream">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
@@ -32,7 +35,7 @@ export function Services() {
                     {t.services.learn}
                     <ArrowRight className={`h-4 w-4 ${rtl ? "rotate-180" : ""}`} />
                   </span>
-                </a>
+                </Link>
               </Reveal>
             );
           })}

@@ -1,8 +1,20 @@
-import { Store, Library, Building2, Nfc, Sparkles } from "lucide-react";
+import {
+  Store,
+  Building2,
+  Nfc,
+  Car,
+  Sparkles,
+  ShoppingCart,
+  Info,
+  Eye,
+  Mail,
+  type LucideIcon,
+} from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/hooks/use-reveal";
 
-const icons = [Store, Library, Building2, Nfc];
+const icons: LucideIcon[] = [Store, Building2, Nfc, Car];
 
 export function Products() {
   const { t } = useLang();
@@ -19,7 +31,10 @@ export function Products() {
           {t.products.items.map((p, i) => {
             const Icon = icons[i];
             const flagship = i === 0;
-            const isNfc = i === 3;
+            const isCgs = i === 1;
+            const isNfc = i === 2;
+            const isErent = i === 3;
+
             return (
               <Reveal key={p.name} delay={i * 100} className={flagship ? "md:col-span-2" : ""}>
                 <div
@@ -30,12 +45,15 @@ export function Products() {
                   {flagship && (
                     <div
                       className="pointer-events-none absolute -top-24 right-0 h-56 w-56 rounded-full blur-3xl"
-                      style={{ background: "var(--gradient-gold)", opacity: 0.12 }}
+                      style={{
+                        background: "var(--gradient-gold)",
+                        opacity: 0.12,
+                      }}
                     />
                   )}
                   <div className="relative flex items-start justify-between gap-4">
-                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-secondary/60 text-gold">
-                      <Icon className="h-6 w-6" />
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-secondary/60 text-tech">
+                      {Icon && <Icon className="h-6 w-6" />}
                     </div>
                     {flagship && (
                       <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
@@ -48,13 +66,23 @@ export function Products() {
                         className="rounded-full px-3 py-1 text-xs font-semibold text-primary-foreground"
                         style={{ background: "var(--gradient-tech)" }}
                       >
-                        {t.products.badgeNew}
+                        {t.products.badgeSoon}
+                      </span>
+                    )}
+                    {isErent && (
+                      <span
+                        className="rounded-full px-3 py-1 text-xs font-semibold text-primary-foreground"
+                        style={{ background: "var(--gradient-tech)" }}
+                      >
+                        {t.products.badgeSoon}
                       </span>
                     )}
                   </div>
 
                   <h3
-                    className={`relative mt-6 font-semibold text-cream ${flagship ? "text-2xl" : "text-lg"}`}
+                    className={`relative mt-6 font-semibold text-cream ${
+                      flagship ? "text-2xl" : "text-lg"
+                    }`}
                   >
                     {p.name}
                   </h3>
@@ -68,14 +96,81 @@ export function Products() {
                     </p>
                   )}
 
-                  {isNfc && (
-                    <a
-                      href="#contact"
-                      className="glow-pulse relative mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
-                    >
-                      {t.products.reserve}
-                    </a>
-                  )}
+                  <div className="relative mt-6 flex flex-wrap gap-3">
+                    {flagship ? (
+                      <>
+                        <Link
+                          to="/pos-ebyte"
+                          className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
+                          style={{ background: "var(--gradient-gold)" }}
+                        >
+                          <ShoppingCart className="h-4 w-4" />
+                          {t.products.order}
+                        </Link>
+                        <Link
+                          to="/pos-ebyte"
+                          className="inline-flex items-center gap-2 rounded-full border border-tech/40 bg-tech/10 px-5 py-2.5 text-sm font-semibold text-tech transition-all hover:bg-tech/20"
+                        >
+                          <Info className="h-4 w-4" />
+                          {t.products.moreInfo}
+                        </Link>
+                      </>
+                    ) : isCgs ? (
+                      <>
+                        <a
+                          href="#contact"
+                          className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
+                          style={{ background: "var(--gradient-tech)" }}
+                        >
+                          <ShoppingCart className="h-4 w-4" />
+                          {t.products.order}
+                        </a>
+                        <Link
+                          to="/cgs"
+                          className="inline-flex items-center gap-2 rounded-full border border-tech/40 bg-tech/10 px-5 py-2.5 text-sm font-semibold text-tech transition-all hover:bg-tech/20"
+                        >
+                          <Info className="h-4 w-4" />
+                          {t.products.moreInfo}
+                        </Link>
+                      </>
+                    ) : isNfc ? (
+                      <>
+                        <a
+                          href="#contact"
+                          className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
+                          style={{ background: "var(--gradient-tech)" }}
+                        >
+                          <ShoppingCart className="h-4 w-4" />
+                          {t.products.order}
+                        </a>
+                        <Link
+                          to="/smart-menu-nfc"
+                          className="inline-flex items-center gap-2 rounded-full border border-tech/40 bg-tech/10 px-5 py-2.5 text-sm font-semibold text-tech transition-all hover:bg-tech/20"
+                        >
+                          <Info className="h-4 w-4" />
+                          {t.products.moreInfo}
+                        </Link>
+                      </>
+                    ) : (
+                      <>
+                        <a
+                          href="#contact"
+                          className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
+                          style={{ background: "var(--gradient-tech)" }}
+                        >
+                          <ShoppingCart className="h-4 w-4" />
+                          {t.products.order}
+                        </a>
+                        <Link
+                          to="/erent"
+                          className="inline-flex items-center gap-2 rounded-full border border-tech/40 bg-tech/10 px-5 py-2.5 text-sm font-semibold text-tech transition-all hover:bg-tech/20"
+                        >
+                          <Info className="h-4 w-4" />
+                          {t.products.moreInfo}
+                        </Link>
+                      </>
+                    )}
+                  </div>
                 </div>
               </Reveal>
             );
