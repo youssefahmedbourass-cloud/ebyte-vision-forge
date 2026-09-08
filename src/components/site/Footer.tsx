@@ -1,4 +1,4 @@
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Instagram, Facebook } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { CONTACT } from "./Contact";
@@ -14,7 +14,14 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
-              <img src={logo} alt="eByte Software" width={36} height={36} loading="lazy" className="h-9 w-9" />
+              <img
+                src={logo}
+                alt="eByte Software"
+                width={36}
+                height={36}
+                loading="lazy"
+                className="h-9 w-9"
+              />
               <span className="font-display font-semibold text-cream">eByte Software</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">{t.footer.tagline}</p>
@@ -67,13 +74,22 @@ export function Footer() {
                 <Linkedin className="h-4 w-4" />
               </a>
               <a
-                href={CONTACT.github}
+                href={CONTACT.instagram}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="GitHub"
+                aria-label="Instagram"
                 className="text-muted-foreground transition-colors hover:text-gold"
               >
-                <Github className="h-4 w-4" />
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href={CONTACT.facebook}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                className="text-muted-foreground transition-colors hover:text-gold"
+              >
+                <Facebook className="h-4 w-4" />
               </a>
             </div>
           </div>

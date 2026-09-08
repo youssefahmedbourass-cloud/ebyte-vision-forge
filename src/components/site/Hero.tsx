@@ -25,7 +25,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-5xl px-5 text-center lg:px-8">
         <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5 text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase">
-            eByte Software · Fès, Morocco
+            eByte Software · Global Solutions
           </span>
         </Reveal>
         <Reveal delay={100}>

@@ -1,10 +1,19 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import logo from "@/assets/logo.png";
 
-const sections = ["home", "about", "services", "products", "contact"] as const;
+const sections = [
+  "home",
+  "about",
+  "services",
+  "products",
+  "partners",
+  "features",
+  "contact",
+] as const;
 
 export function Navbar() {
   const { t } = useLang();
@@ -48,6 +57,13 @@ export function Navbar() {
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <Link
+            to="/who"
+            className="group relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {t.nav.who}
+            <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
+          </Link>
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
@@ -82,6 +98,13 @@ export function Navbar() {
                 {t.nav[s]}
               </a>
             ))}
+            <Link
+              to="/who"
+              onClick={() => setOpen(false)}
+              className="text-base font-medium text-muted-foreground hover:text-foreground"
+            >
+              {t.nav.who}
+            </Link>
           </nav>
           <div className="mt-6 flex items-center justify-between gap-4">
             <LanguageSwitcher />
