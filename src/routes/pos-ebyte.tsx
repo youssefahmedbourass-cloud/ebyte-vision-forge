@@ -4,9 +4,10 @@ import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { PosEbytePage } from "@/components/site/PosEbytePage";
 
-const title = "POS eByte — Point de vente complet pour commerces marocains";
+const title = "POS eByte – Logiciel de Caisse et Gestion pour Commerces au Maroc";
 const description =
-  "POS eByte, logiciel de point de vente complet et hors ligne pour les entreprises marocaines — ventes, stock, facturation et opérations quotidiennes.";
+  "POS eByte : système de caisse complet pour magasins de pièces auto et commerces au Maroc. Gestion des stocks, facturation, sauvegardes sécurisées.";
+const canonical = "https://ebytesoftware.onrender.com/pos-ebyte";
 
 export const Route = createFileRoute("/pos-ebyte")({
   head: () => ({
@@ -16,7 +17,15 @@ export const Route = createFileRoute("/pos-ebyte")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: canonical },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: canonical },
+      { rel: "alternate", hrefLang: "fr", href: canonical },
+      { rel: "alternate", hrefLang: "ar", href: canonical },
+      { rel: "alternate", hrefLang: "en", href: canonical },
+      { rel: "alternate", hrefLang: "x-default", href: canonical },
     ],
   }),
   component: PosEbyteRoute,

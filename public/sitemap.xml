@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ebytesoftware.onrender.com/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/" />
+  </url>
+  <url>
+    <loc>https://ebytesoftware.onrender.com/pos-ebyte</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/pos-ebyte" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/pos-ebyte" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/pos-ebyte" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/pos-ebyte" />
+  </url>
+  <url>
+    <loc>https://ebytesoftware.onrender.com/cgs</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/cgs" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/cgs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/cgs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/cgs" />
+  </url>
+  <url>
+    <loc>https://ebytesoftware.onrender.com/smart-menu-nfc</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/smart-menu-nfc" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/smart-menu-nfc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/smart-menu-nfc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/smart-menu-nfc" />
+  </url>
+  <url>
+    <loc>https://ebytesoftware.onrender.com/erent</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/erent" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/erent" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/erent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/erent" />
+  </url>
+  <url>
+    <loc>https://ebytesoftware.onrender.com/who</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/who" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/who" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/who" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/who" />
+  </url>
+  <url>
+    <loc>https://ebytesoftware.onrender.com/contact-sales</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ebytesoftware.onrender.com/contact-sales" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ebytesoftware.onrender.com/contact-sales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ebytesoftware.onrender.com/contact-sales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ebytesoftware.onrender.com/contact-sales" />
+  </url>
+</urlset>

@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "eByte Software – Applications Sur Mesure au Maroc" },
+      { name: "description", content: "eByte Software conçoit des applications sur mesure — mobiles, web et desktop — pour les entreprises marocaines et de la région MENA." },
+      { name: "author", content: "eByte Software" },
+      { property: "og:title", content: "eByte Software – Applications Sur Mesure au Maroc" },
+      { property: "og:description", content: "eByte Software conçoit des applications sur mesure — mobiles, web et desktop — pour les entreprises marocaines et de la région MENA." },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "eByte Software" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
