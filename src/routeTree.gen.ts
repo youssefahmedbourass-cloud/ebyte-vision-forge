@@ -11,7 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CgsRouteImport } from './routes/cgs'
+import { Route as ContactSalesRouteImport } from './routes/contact-sales'
 import { Route as ErentRouteImport } from './routes/erent'
+import { Route as OapamRouteImport } from './routes/oapam'
 import { Route as PosEbyteRouteImport } from './routes/pos-ebyte'
 import { Route as SmartMenuNfcRouteImport } from './routes/smart-menu-nfc'
 import { Route as WhoRouteImport } from './routes/who'
@@ -29,9 +31,19 @@ const CgsRoute = CgsRouteImport.update({
   path: '/cgs',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactSalesRoute = ContactSalesRouteImport.update({
+  id: '/contact-sales',
+  path: '/contact-sales',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ErentRoute = ErentRouteImport.update({
   id: '/erent',
   path: '/erent',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OapamRoute = OapamRouteImport.update({
+  id: '/oapam',
+  path: '/oapam',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PosEbyteRoute = PosEbyteRouteImport.update({
@@ -68,7 +80,9 @@ const ServicesWebRoute = ServicesWebRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cgs': typeof CgsRoute
+  '/contact-sales': typeof ContactSalesRoute
   '/erent': typeof ErentRoute
+  '/oapam': typeof OapamRoute
   '/pos-ebyte': typeof PosEbyteRoute
   '/smart-menu-nfc': typeof SmartMenuNfcRoute
   '/who': typeof WhoRoute
@@ -79,7 +93,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cgs': typeof CgsRoute
+  '/contact-sales': typeof ContactSalesRoute
   '/erent': typeof ErentRoute
+  '/oapam': typeof OapamRoute
   '/pos-ebyte': typeof PosEbyteRoute
   '/smart-menu-nfc': typeof SmartMenuNfcRoute
   '/who': typeof WhoRoute
@@ -91,7 +107,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cgs': typeof CgsRoute
+  '/contact-sales': typeof ContactSalesRoute
   '/erent': typeof ErentRoute
+  '/oapam': typeof OapamRoute
   '/pos-ebyte': typeof PosEbyteRoute
   '/smart-menu-nfc': typeof SmartMenuNfcRoute
   '/who': typeof WhoRoute
@@ -104,7 +122,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cgs'
+    | '/contact-sales'
     | '/erent'
+    | '/oapam'
     | '/pos-ebyte'
     | '/smart-menu-nfc'
     | '/who'
@@ -115,7 +135,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/cgs'
+    | '/contact-sales'
     | '/erent'
+    | '/oapam'
     | '/pos-ebyte'
     | '/smart-menu-nfc'
     | '/who'
@@ -126,7 +148,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/cgs'
+    | '/contact-sales'
     | '/erent'
+    | '/oapam'
     | '/pos-ebyte'
     | '/smart-menu-nfc'
     | '/who'
@@ -138,7 +162,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CgsRoute: typeof CgsRoute
+  ContactSalesRoute: typeof ContactSalesRoute
   ErentRoute: typeof ErentRoute
+  OapamRoute: typeof OapamRoute
   PosEbyteRoute: typeof PosEbyteRoute
   SmartMenuNfcRoute: typeof SmartMenuNfcRoute
   WhoRoute: typeof WhoRoute
@@ -163,11 +189,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CgsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact-sales': {
+      id: '/contact-sales'
+      path: '/contact-sales'
+      fullPath: '/contact-sales'
+      preLoaderRoute: typeof ContactSalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/erent': {
       id: '/erent'
       path: '/erent'
       fullPath: '/erent'
       preLoaderRoute: typeof ErentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/oapam': {
+      id: '/oapam'
+      path: '/oapam'
+      fullPath: '/oapam'
+      preLoaderRoute: typeof OapamRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pos-ebyte': {
@@ -218,7 +258,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CgsRoute: CgsRoute,
+  ContactSalesRoute: ContactSalesRoute,
   ErentRoute: ErentRoute,
+  OapamRoute: OapamRoute,
   PosEbyteRoute: PosEbyteRoute,
   SmartMenuNfcRoute: SmartMenuNfcRoute,
   WhoRoute: WhoRoute,

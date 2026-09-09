@@ -1,4 +1,5 @@
-import { Library, ExternalLink, ArrowRight } from "lucide-react";
+import { Package, ExternalLink, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/hooks/use-reveal";
 
@@ -6,11 +7,11 @@ const partnerApps = [
   {
     name: "OAPAM",
     description: {
-      fr: "Système de gestion de bibliothèques complet — catalogage, emprunts, gestion des membres et rapports.",
-      en: "Complete library management system — cataloging, borrowing, member management and reporting.",
-      ar: "نظام إدارة مكتبات شامل — الفهرسة والإعارة إدارة الأعضاء والتقارير.",
+      fr: "Gestion de stock et inventaire pour fournitures et équipements de bureau — suivi des distributions, rapports, génération PDF, fonctionne hors ligne.",
+      en: "Stock and inventory management for office supplies and equipment — distribution tracking, reports, PDF generation, works offline.",
+      ar: "إدارة المخزون والجرد للمستلزمات والتجهيزات المكتبية — تتبع التوزيعات، التقارير، توليد PDF، يعمل دون إنترنت.",
     },
-    icon: Library,
+    icon: Package,
     color: "tech",
   },
 ];
@@ -57,13 +58,13 @@ export function PartnerApps() {
                       {app.description[lang as keyof typeof app.description] || app.description.en}
                     </p>
                     <div className="mt-5 flex items-center gap-4">
-                      <a
-                        href="#contact"
+                      <Link
+                        to="/oapam"
                         className="inline-flex items-center gap-2 text-sm font-medium text-tech transition-colors hover:text-tech-deep"
                       >
                         {t.partners.visitSite}
                         <ArrowRight className="h-4 w-4" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

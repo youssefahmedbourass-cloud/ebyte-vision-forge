@@ -22,6 +22,7 @@ export const translations = {
         "eByte Software conçoit des applications sur mesure — mobiles, web et desktop — pensées et développées selon la vision et les besoins réels de chaque client. Nous transformons vos idées en solutions digitales fiables et performantes.",
       ctaProducts: "Découvrir nos produits",
       ctaContact: "Nous contacter",
+      freeTrial: "ESSAI GRATUIT 30 JOURS · POS eByte",
       stats: [
         { value: "10+", label: "clients au Maroc" },
         { value: "4", label: "produits phares" },
@@ -526,6 +527,133 @@ export const translations = {
       ctaTitle: "eRent arrive bientôt. Soyez parmi les premiers à l'utiliser.",
       ctaSubtitle: "Contactez-nous pour en savoir plus ou passer commande.",
     },
+    oapam: {
+      title: "OAPAM — Gestion de Stock et Inventaire",
+      subtitle:
+        "Système complet de gestion des stocks et de l'inventaire pour fournitures et équipements de bureau, développé sur mesure pour nos partenaires.",
+      badge: "Application Partenaire",
+      back: "Retour aux partenaires",
+      intro:
+        "OAPAM est un logiciel de bureau conçu pour fonctionner sans connexion internet, destiné aux organisations qui veulent gérer leurs stocks de fournitures et équipements de bureau de manière efficace et structurée. Directement installé sur l'ordinateur, OAPAM centralise tout : articles, distributions aux services, réapprovisionnements, fournisseurs et paramètres — le tout dans une interface intuitive et professionnelle.",
+      modulesTitle: "Modules principaux",
+      modules: [
+        {
+          title: "Gestion des Articles",
+          text: "Catalogage complet de vos fournitures et équipements avec références, quantités en stock, alertes de ruptures et suivi des dates d'ajout.",
+        },
+        {
+          title: "Distributions",
+          text: "Enregistrement des distributions aux services administratifs avec bénéficiaire, date, quantité, type, état et observations.",
+        },
+        {
+          title: "Réapprovisionnements",
+          text: "Suivi des entrées de stock par bon d'entrée, avec filtres par semaine/mois et export Excel.",
+        },
+        {
+          title: "Services",
+          text: "Gestion des services et départements administratifs bénéficiaires, avec responsable et date d'ajout.",
+        },
+        {
+          title: "Fournisseurs",
+          text: "Annuaire complet de vos fournisseurs avec coordonnées, export PDF/Excel et gestion des sélections.",
+        },
+        {
+          title: "Paramètres",
+          text: "Gestion du profil utilisateur, sécurité du mot de passe et personnalisation de l'application.",
+        },
+      ],
+      sections: [
+        {
+          heading: "Gestion intelligente des articles",
+          text: "Chaque article dispose de sa propre fiche avec référence unique, nom du produit, quantité en stock et date d'ajout. Recherchez par référence ou par nom, triez par quantité croissante, identifiez rapidement les articles en rupture de stock, et augmentez le stock en un clic. Le système calcule automatiquement le stock disponible.",
+          image: "lesArtcles.png",
+        },
+        {
+          heading: "Réapprovisionnements tracés",
+          text: "Chaque entrée de stock est enregistrée via un bon d'entrée : référence, nom du produit, fournisseur, quantité ajoutée et date d'entrée. Filtrez par semaine ou par mois pour garder un œil sur les approvisionnements récents, et exportez vos données vers Excel pour vos rapports internes.",
+          image: "Rea.png",
+        },
+        {
+          heading: "Services et bénéficiaires",
+          text: "Gérez vos services et départements administratifs : nom du service, responsable, date d'ajout. Chaque distribution est rattachée à un service précis, permettant de suivre précisément qui reçoit quoi, quand et en quelle quantité.",
+          image: "lesService.png",
+        },
+        {
+          heading: "Paramètres et sécurité",
+          text: "Gérez votre profil utilisateur — nom, email, téléphone — et assurez la sécurité de votre compte avec un système de modification de mot de passe intégré. Les données restent localement sur votre disque dur, sans aucune dépendance à internet.",
+          image: "Parameters.png",
+        },
+      ],
+      featuresTitle: "Fonctionnalités clés",
+      features: [
+        {
+          title: "Calcul automatique du stock",
+          text: "Le système calcule en permanence le stock entrant, le stock distribué et le stock restant.",
+        },
+        {
+          title: "Génération de PDF",
+          text: "Créez des bons de livraison PDF avec tableau détaillé et zones de signature dédiées.",
+        },
+        {
+          title: "Stockage local sécurisé",
+          text: "Toutes vos données sont stockées sur le disque dur, sans besoin d'internet.",
+        },
+        {
+          title: "Gestion par rôles",
+          text: "Authentification par identifiant et mot de passe avec gestion des accès utilisateurs.",
+        },
+        {
+          title: "Recherche et filtrage",
+          text: "Recherchez par référence, nom ou service. Filtrez par date, quantité ou état.",
+        },
+        {
+          title: "Export PDF & Excel",
+          text: "Exportez vos articles, distributions et fournisseurs en PDF ou Excel en un clic.",
+        },
+        {
+          title: "Rapports périodiques",
+          text: "Générez des rapports mensuels ou trimestriels sur l'état du stock et les distributions.",
+        },
+        {
+          title: "Interface bilingue",
+          text: "Interface entièrement en français, conçue pour les organisations francophones.",
+        },
+      ],
+      offlineTitle: "100% hors ligne, 100% sécurisé",
+      offlineText:
+        "OAPAM fonctionne entièrement sans connexion internet. Vos données de stock, vos distributions et vos rapports restent stockés en toute sécurité sur le disque dur de votre ordinateur. Aucun abonnement mensuel, aucune dépendance cloud — vous gardez le contrôle total de vos informations.",
+      galleryTitle: "Aperçu de l'interface",
+      testimonialTitle: "Ce que dit notre client",
+      testimonial: {
+        text: "L'expérience avec eByte Software a été exceptionnelle. L'ingénieur Mohammed Bourass est un vrai professionnel qui mérite tout le respect et l'appréciation. Il écoute, collabore au plus haut niveau et suit le projet dans ses moindres détails — petits et grands. Il apporte sa touche distinctive grâce à son expertise et sa maîtrise du domaine. Je lui souhaite le meilleur et le remercie pour son travail assidu et son dévouement tout au long du projet. Salutations et reconnaissance.",
+        name: "Mohammed Bouacha",
+        role: "Propriétaire du projet OAPAM",
+      },
+      testimonialRatings: [
+        "Professionnalisme",
+        "Communication et suivi",
+        "Qualité du livrable",
+        "Expertise technique",
+        "Respect des délais",
+      ],
+      ctaTitle: "OAPAM — La solution qui digitalise la gestion de vos stocks.",
+      ctaSubtitle:
+        "Contactez-nous pour en savoir plus, demander une démonstration ou passer commande.",
+      ctaBtn: "Contacter les ventes",
+      ctaBtn2: "Demander une démo",
+    },
+    contactSalesPage: {
+      title: "Contactez-nous",
+      subtitle: "Notre équipe est à votre écoute pour répondre à toutes vos questions.",
+      back: "Retour à l'accueil",
+      salesTitle: "Service Ventes",
+      salesRole: "Votre conseiller commercial",
+      salesName: "OTHMANE EL MARZOUQY",
+      salesPhone: "+212 684-651514",
+      supportTitle: "Support Technique",
+      supportRole: "Assistance générale",
+      supportPhone: "+212 664-845803",
+    },
   },
   en: {
     dir: "ltr",
@@ -546,6 +674,7 @@ export const translations = {
         "eByte Software builds custom applications — mobile, web and desktop — designed and developed around each client's real vision and needs. We turn your ideas into reliable, high-performance digital solutions.",
       ctaProducts: "Discover our products",
       ctaContact: "Contact us",
+      freeTrial: "FREE 30-DAY TRIAL · POS eByte",
       stats: [
         { value: "10+", label: "clients across Morocco" },
         { value: "4", label: "flagship products" },
@@ -1045,12 +1174,139 @@ export const translations = {
       ctaTitle: "eRent is coming soon. Be among the first to use it.",
       ctaSubtitle: "Contact us to learn more or place an order.",
     },
+    oapam: {
+      title: "OAPAM — Stock & Inventory Management",
+      subtitle:
+        "A complete stock and inventory management system for office supplies and equipment, custom-built for our partners.",
+      badge: "Partner Application",
+      back: "Back to partners",
+      intro:
+        "OAPAM is desktop software designed to work without an internet connection, built for organizations that want to manage their office supplies and equipment inventory efficiently and systematically. Installed directly on your computer, OAPAM centralizes everything: articles, department distributions, restocking, suppliers, and settings — all within an intuitive, professional interface.",
+      modulesTitle: "Core Modules",
+      modules: [
+        {
+          title: "Article Management",
+          text: "Complete cataloging of supplies and equipment with references, stock quantities, low-stock alerts, and addition date tracking.",
+        },
+        {
+          title: "Distributions",
+          text: "Record distributions to administrative departments with beneficiary, date, quantity, type, condition, and notes.",
+        },
+        {
+          title: "Restocking",
+          text: "Track stock entries by entry slip, with weekly/monthly filters and Excel export.",
+        },
+        {
+          title: "Departments",
+          text: "Manage administrative services and departments with responsible person and addition date.",
+        },
+        {
+          title: "Suppliers",
+          text: "Complete supplier directory with contact details, PDF/Excel export, and selection management.",
+        },
+        {
+          title: "Settings",
+          text: "User profile management, password security, and application customization.",
+        },
+      ],
+      sections: [
+        {
+          heading: "Smart article management",
+          text: "Each article has its own profile with unique reference, product name, stock quantity, and addition date. Search by reference or name, sort by ascending quantity, quickly identify out-of-stock items, and increase stock with one click. The system automatically calculates available stock levels.",
+          image: "lesArtcles.png",
+        },
+        {
+          heading: "Tracked restocking",
+          text: "Every stock entry is recorded via an entry slip: reference, product name, supplier, quantity added, and entry date. Filter by week or month to keep an eye on recent restocking, and export your data to Excel for internal reports.",
+          image: "Rea.png",
+        },
+        {
+          heading: "Departments & beneficiaries",
+          text: "Manage your administrative services and departments: service name, responsible person, addition date. Each distribution is tied to a specific department, allowing precise tracking of who receives what, when, and in what quantity.",
+          image: "lesService.png",
+        },
+        {
+          heading: "Settings & security",
+          text: "Manage your user profile — name, email, phone — and secure your account with a built-in password change system. All data stays locally on your hard drive, with zero internet dependency.",
+          image: "Parameters.png",
+        },
+      ],
+      featuresTitle: "Key Features",
+      features: [
+        {
+          title: "Automatic stock calculation",
+          text: "The system continuously calculates incoming stock, distributed stock, and remaining stock.",
+        },
+        {
+          title: "PDF generation",
+          text: "Create delivery slips as PDFs with detailed tables and dedicated signature fields.",
+        },
+        {
+          title: "Secure local storage",
+          text: "All your data is stored on your hard drive with no internet required.",
+        },
+        {
+          title: "Role-based access",
+          text: "Login authentication with username/password and user access management.",
+        },
+        {
+          title: "Search & filtering",
+          text: "Search by reference, name, or department. Filter by date, quantity, or condition.",
+        },
+        {
+          title: "PDF & Excel export",
+          text: "Export your articles, distributions, and suppliers to PDF or Excel in one click.",
+        },
+        {
+          title: "Periodic reports",
+          text: "Generate monthly or quarterly reports on stock status and distributions.",
+        },
+        {
+          title: "Bilingual interface",
+          text: "Fully French-language interface, designed for French-speaking organizations.",
+        },
+      ],
+      offlineTitle: "100% offline, 100% secure",
+      offlineText:
+        "OAPAM runs entirely without an internet connection. Your stock data, distributions, and reports stay securely stored on your computer's hard drive. No monthly subscription, no cloud dependency — you maintain full control of your information.",
+      galleryTitle: "Interface Preview",
+      testimonialTitle: "What our client says",
+      testimonial: {
+        text: "The experience with eByte Software was exceptional. The engineer Mohammed Bourass is a true professional who deserves all respect and appreciation. He listens, collaborates at the highest level, and follows the project in its smallest and largest details. He brings his distinctive touch thanks to his expertise and mastery of his field. I wish him the best and thank him for his diligent work and dedication throughout the project. Greetings and recognition.",
+        name: "Mohammed Bouacha",
+        role: "OAPAM Project Owner",
+      },
+      testimonialRatings: [
+        "Professionalism",
+        "Communication & follow-up",
+        "Deliverable quality",
+        "Technical expertise",
+        "On-time delivery",
+      ],
+      ctaTitle: "OAPAM — The solution that digitizes your stock management.",
+      ctaSubtitle:
+        "Contact us to learn more, request a demo, or place an order.",
+      ctaBtn: "Contact Sales",
+      ctaBtn2: "Request a Demo",
+    },
+    contactSalesPage: {
+      title: "Contact Us",
+      subtitle: "Our team is here to answer all your questions.",
+      back: "Back to home",
+      salesTitle: "Sales Department",
+      salesRole: "Your sales advisor",
+      salesName: "OTHMANE EL MARZOUQY",
+      salesPhone: "+212 684-651514",
+      supportTitle: "Tech Support",
+      supportRole: "General assistance",
+      supportPhone: "+212 664-845803",
+    },
   },
   ar: {
     dir: "rtl",
     nav: {
       home: "الرئيسية",
-      about: "من نحن",
+      about: "عنا",
       services: "الخدمات",
       products: "المنتجات",
       partners: "الشركاء",
@@ -1065,6 +1321,7 @@ export const translations = {
         "تصمم eByte Software تطبيقات مخصصة — للهاتف والويب وسطح المكتب — تُبنى وفق رؤية كل عميل واحتياجاته الحقيقية. نحوّل أفكارك إلى حلول رقمية موثوقة وعالية الأداء.",
       ctaProducts: "اكتشف منتجاتنا",
       ctaContact: "تواصل معنا",
+      freeTrial: "تجربة مجانية 30 يوم · POS eByte",
       stats: [
         { value: "+10", label: "عميل في المغرب" },
         { value: "4", label: "منتجات رئيسية" },
@@ -1558,6 +1815,133 @@ export const translations = {
         "واجهة باللغة الفرنسية، م adapting للظروف الميدانية — سواء أدرت 5 سيارات أو أسطولًا من عدة عشرات، ينمو eRent مع وكالتك.",
       ctaTitle: "eRent قريباً. كن من أوائل من يستخدمونه.",
       ctaSubtitle: "تواصل معنا لمعرفة المزيد أو طلب الطلب.",
+    },
+    oapam: {
+      title: "OAPAM — إدارة المخزون والجرد",
+      subtitle:
+        "نظام شامل لإدارة المخزون والجرد للمستلزمات والتجهيزات المكتبية، مطور خصيصاً لشركائنا.",
+      badge: "تطبيق شريك",
+      back: "العودة إلى الشركاء",
+      intro:
+        "OAPAM هو برنامج مكتبي يعمل بدون اتصال بالإنترنت، مخصص للمؤسسات التي تريد إدارة مخزون المستلزمات والتجهيزات المكتبية بكفاءة ومنهجية. يُثبَّت مباشرة على جهاز الكمبيوتر، ويركّز OAPAM كل شيء: المواد، والتوزيعات على المصالح، وإعادة التعبئة، والموردين، والإعدادات — كل ذلك في واجهة بديهية واحترافية.",
+      modulesTitle: "الوحدات الرئيسية",
+      modules: [
+        {
+          title: "إدارة المواد",
+          text: "فهرسة شاملة للمستلزمات والتجهيزات مع المراجع، والكميات في المخزون، وتنبيهات نفاد المخزون، وتاريخ الإضافة.",
+        },
+        {
+          title: "التوزيعات",
+          text: "تسجيل التوزيعات على المصالح الإدارية مع اسم المستفيد، التاريخ، الكمية، النوع، الحالة، والملاحظات.",
+        },
+        {
+          title: "إعادة التعبئة",
+          text: "تتبع مدخول المخزون بbon d'entrée، مع فلاتر أسبوعية/شهرية وتصدير Excel.",
+        },
+        {
+          title: "المصالح",
+          text: "إدارة المصالح والخدمات الإدارية المستفيدة مع المسؤول وتاريخ الإضافة.",
+        },
+        {
+          title: "الموردون",
+          text: "دليل شامل للموردين مع بيانات الاتصال، وتصدير PDF/Excel، وإدارة التحديدات.",
+        },
+        {
+          title: "الإعدادات",
+          text: "إدارة ملف المستخدم، وأمان كلمة المرور، وتخصيص التطبيق.",
+        },
+      ],
+      sections: [
+        {
+          heading: "إدارة ذكية للمواد",
+          text: "كل مادة لها ملف خاص بها مع مرجع فريد، واسم المنتج، والكمية في المخزون، وتاريخ الإضافة. ابحث بالمرجع أو الاسم، ورتب حسب الكمية التصاعدية، وحدد بسرعة المواد المنفد من مخزونها، وزِد المخزون بنقرة واحدة. يقوم النظام بحساب المخزون المتاح تلقائياً.",
+          image: "lesArtcles.png",
+        },
+        {
+          heading: "إعادة تعبئة موثقة",
+          text: "كل مدخول في المخزون مسجل عبر bon d'entrée: المرجع، واسم المنتج، والمورد، والكمية المضافة، وتاريخ الدخول. افلتر حسب الأسبوع أو الشهر لمتابعة عمليات التعبئة الأخيرة، وصدّر بياناتك إلى Excel لتقاريرك الداخلية.",
+          image: "Rea.png",
+        },
+        {
+          heading: "المصالح والمستفيدون",
+          text: "أدر مصالحك和服务 الإدارية: اسم الخدمة، المسؤول، تاريخ الإضافة. كل توزيع مرتبط بخدمة محددة، مما يتيح تتبع دقيق لمن يحصل على ماذا، ومتى، وبأي كمية.",
+          image: "lesService.png",
+        },
+        {
+          heading: "الإعدادات والأمان",
+          text: "أدر ملفك الشخصي — الاسم، البريد الإلكتروني، الهاتف — وأمان حسابك بنظام تغيير كلمة المرور المدمج. تبقى جميع البيانات محلياً على القرص الصلب، دون أي اعتماد على الإنترنت.",
+          image: "Parameters.png",
+        },
+      ],
+      featuresTitle: "الميزات الرئيسية",
+      features: [
+        {
+          title: "حساب تلقائي للمخزون",
+          text: "يحسب النظام باستمرار المخزون الوارد، والمخزون الموزع، والمخزون المتبقي.",
+        },
+        {
+          title: "توليد PDF",
+          text: "إنشاء أيصالات تسليم بصيغة PDF مع جداول تفصيلية ومناطق توقيع مخصصة.",
+        },
+        {
+          title: "تخزين محلي آمن",
+          text: "جميع بياناتك مخزنة على القرص الصلب دون الحاجة للإنترنت.",
+        },
+        {
+          title: "إدارة بالroles",
+          text: "مصادقة عبر اسم المستخدم وكلمة المرور مع إدارة وصول المستخدمين.",
+        },
+        {
+          title: "البحث والفلاتر",
+          text: "ابحث بالمرجع أو الاسم أو الخدمة. افلتر حسب التاريخ أو الكمية أو الحالة.",
+        },
+        {
+          title: "تصدير PDF و Excel",
+          text: "صدّر موادك وتوزيعاتك ومورديك إلى PDF أو Excel بنقرة واحدة.",
+        },
+        {
+          title: "تقارير دورية",
+          text: "إنشاء تقارير شهرية أو ربع سنوية عن حالة المخزون والتوزيعات.",
+        },
+        {
+          title: "واجهة ثنائية اللغة",
+          text: "واجهة بالكامل باللغة الفرنسية، مصممة للمؤسسات الناطقة بالفرنسية.",
+        },
+      ],
+      offlineTitle: "يعمل 100% دون إنترنت، 100% آمن",
+      offlineText:
+        "يعمل OAPAM بالكامل بدون اتصال بالإنترنت. بيانات المخزون والتوزيعات والتقارير تبقى مخزنة بأمان على القرص الصلب لجهاز الكمبيوتر. لا اشتراك شهري، لا اعتماد على السحابة — تحتفظ بتحكم كامل في معلوماتك.",
+      galleryTitle: "معاينة الواجهة",
+      testimonialTitle: "ماذا يقول عميلنا",
+      testimonial: {
+        text: "كانت التجربة مع eByte Software استثنائية. المهندس محمد بوراس محترف حقيقي يستحق كل احترام وتقدير. يستمع، ويتعاون على أعلى مستوى، ويتتبع المشروع في أدق تفاصيله الصغيرة والكبيرة. يضع لمسته المميزة بفضل خبرته وتمرسه في مجال عمله. أتمنى له كل التوفيق وأشكره على عمله الدؤوب وتفانيه طوال فترة العمل. تحية وتقدير.",
+        name: "محمد بوشاح",
+        role: "صاحب مشروع OAPAM",
+      },
+      testimonialRatings: [
+        "الاحترافية",
+        "التواصل والمتابعة",
+        "جودة المسلّم",
+        "الخبرة التقنية",
+        "التسليم في الموعد",
+      ],
+      ctaTitle: "OAPAM — الحل الذي يرقمن إدارة مخزونك.",
+      ctaSubtitle:
+        "تواصل معنا لمعرفة المزيد، أو طلب عرض توضيحي، أو تقديم طلب.",
+      ctaBtn: "التواصل مع المبيعات",
+      ctaBtn2: "طلب عرض توضيحي",
+    },
+    contactSalesPage: {
+      title: "اتصل بنا",
+      subtitle: "فريقنا في خدمتك للإجابة على جميع أسئلتك.",
+      back: "العودة إلى الرئيسية",
+      salesTitle: "قسم المبيعات",
+      salesRole: "مستشكك التجاري",
+      salesName: "OTHMANE EL MARZOUQY",
+      salesPhone: "+212 684-651514",
+      supportTitle: "الدعم الفني",
+      supportRole: "المساعدة العامة",
+      supportPhone: "+212 664-845803",
     },
   },
 } as const;

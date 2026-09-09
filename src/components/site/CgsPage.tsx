@@ -58,21 +58,21 @@ export function CgsPage() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact-sales"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
                   style={{ background: "var(--gradient-tech)" }}
                 >
                   <Mail className="h-4 w-4" />
                   {p.contactSales}
-                </a>
-                <a
-                  href="#contact"
+                </Link>
+                <Link
+                  to="/contact-sales"
                   className="inline-flex items-center gap-2 rounded-full border border-tech/40 bg-tech/10 px-6 py-2.5 text-sm font-semibold text-tech transition-all hover:bg-tech/20"
                 >
                   <Send className="h-4 w-4" />
                   {p.requestDemo}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -117,21 +117,21 @@ export function CgsPage() {
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <a
-                href="#contact"
+              <Link
+                to="/contact-sales"
                 className="inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white transition-transform hover:scale-105"
                 style={{ background: "var(--gradient-tech)" }}
               >
                 <Mail className="h-4 w-4" />
                 {p.contactSales}
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                to="/contact-sales"
                 className="inline-flex items-center gap-2 rounded-full border border-tech/40 bg-tech/10 px-8 py-3 text-sm font-semibold text-tech transition-all hover:bg-tech/20"
               >
                 <Send className="h-4 w-4" />
                 {p.requestDemo}
-              </a>
+              </Link>
             </div>
           </div>
         </Reveal>
