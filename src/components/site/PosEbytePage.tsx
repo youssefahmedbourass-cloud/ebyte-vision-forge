@@ -80,12 +80,33 @@ const galleryAlts = [
   "Paramètres 2",
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "POS eByte",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Windows",
+  description:
+    "Système de caisse (POS) complet pour la gestion de commerces au Maroc, incluant facturation, gestion de stock et sauvegardes sécurisées.",
+  offers: { "@type": "Offer", priceCurrency: "MAD" },
+  publisher: {
+    "@type": "Organization",
+    name: "eByte Software",
+    url: "https://ebytesoftware.onrender.com",
+  },
+  areaServed: "MA",
+};
+
 export function PosEbytePage() {
   const { t, rtl } = useLang();
   const p = t.posEbyte;
 
   return (
     <section className="relative pt-28 pb-24 lg:pt-36 lg:pb-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         {/* Back link */}
         <Reveal>
@@ -106,7 +127,7 @@ export function PosEbytePage() {
               Produit phare
             </span>
             <h1 className="mt-6 text-4xl font-bold text-cream sm:text-5xl lg:text-6xl">
-              {p.title}
+              POS eByte : Système de Gestion de Caisse pour le Maroc
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">{p.subtitle}</p>
           </div>
