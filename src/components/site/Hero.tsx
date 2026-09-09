@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/hooks/use-reveal";
 import banner from "@/assets/banner.jpg";
@@ -28,6 +29,22 @@ export function Hero() {
             eByte Software · Global Solutions
           </span>
         </Reveal>
+
+        {/* Free Trial Banner */}
+        <Reveal delay={50}>
+          <div className="mx-auto mt-6 max-w-md">
+            <Link
+              to="/pos-ebyte"
+              className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full border border-gold/50 bg-gold/10 px-5 py-2.5 text-sm font-semibold text-gold transition-all hover:scale-105 hover:border-gold hover:bg-gold/20 hover:shadow-[0_0_24px_rgba(212,175,55,0.25)]"
+            >
+              <span className="absolute inset-0 -z-10 animate-pulse rounded-full bg-gradient-to-r from-gold/0 via-gold/10 to-gold/0" />
+              <Sparkles className="h-4 w-4 text-gold" />
+              <span>{t.hero.freeTrial}</span>
+              <ArrowRight className={`h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 ${rtl ? "rotate-180 group-hover:-translate-x-0.5" : ""}`} />
+            </Link>
+          </div>
+        </Reveal>
+
         <Reveal delay={100}>
           <h1 className="mt-8 text-4xl leading-tight font-bold text-cream sm:text-5xl lg:text-6xl">
             <span className="text-gradient-gold">{t.hero.tagline}</span>
